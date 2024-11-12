@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mly</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        /* Frame styling */
+        .frame {
+            border: none;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top, Middle, and Bottom frames */
+        .top-frame, .bottom-frame {
+            height: 25%;
+            background: url('pinkwhitechecks.png') no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .middle-frame {
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #FDEEF4; /* Light pink aesthetic background */
+        }
+
+        /* Logo in the top frame */
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Middle frame content */
+        .greeting {
+            font-family: PlayWrite US Modern, cursive;
+            font-size: 2.5em;
+            color: #CB017A;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Button styling */
+        .button {
+           
+    background-color: #DB5275;
+    color: black;
+    border: none;
+    border-radius: 50px;  /* Increased border radius for more rounded ends */
+    padding: 15px 50px;   /* Increased padding for a wider button */
+    margin: 10px 0;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    text-align: center;
+
+
+        }
+
+        /* Button hover effect */
+        .button:hover {
+            background-color: #e06c8f;
+        }
+    </style>
+</head>
+<body>
+    <!-- Frames Structure -->
+    <div class="frame">
+        <!-- Top frame with logo -->
+        <div class="top-frame">
+            <img src="mlylg1.png" alt="Logo" class="logo" width="100">
+        </div>
+        
+        <!-- Middle frame with greeting and buttons -->
+        <div class="middle-frame">
+            <div class="greeting">Hello, Beautiful</div>
+            <button class="button">Log In</button>
+            <button class="button">Sign Up</button>
+        </div>
+        
+        <!-- Bottom frame with same image as the top frame -->
+        <div class="bottom-frame"></div>
+        <!--<img src = "mlylg1.png" width="100" height="100"> -->
+    </div>
+</body>
+</html>
